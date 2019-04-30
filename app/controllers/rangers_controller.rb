@@ -1,0 +1,3 @@
+class RangersController < ApplicationController
+
+end
