@@ -18,7 +18,7 @@ class ParksController < ApplicationController
 
   def show
     @park = Park.find(params[:id])
-    @rangers = Ranger.where(park_id: params[:park_id])
+    @rangers = Park.where(park_id: params[:park_id])
   end
 
 private
@@ -26,4 +26,9 @@ private
   def park_params
     params.require(:park).permit(:name, :description, :ranger_ids => [])
   end
+
+  def ranger_params
+    params.require(:ranger).permit(:name, :park_ids => [])
+  end
+
 end
