@@ -9,9 +9,15 @@
 </p>
 
 <p>
-	<strong>Description:</strong>
-  <%= @ranger.ranger_ids %>
+  <strong>Rangers:</strong>
 </p>
 
+ <% @ranger.each do |ranger| %>
+    <tr>
+      <td><%= ranger.name %></td>
+      <%# <td><%= link_to 'Show', edit_article_path(article)%>
+    </tr>
+  <% end %>
+
 <%# <%= link_to 'Back', root_path %>
-<%# <%= link_to 'Edit', edit_article_path(@article) %> %> %>
+<%# <%= link_to 'Edit', edit_article_path(@article) %>
