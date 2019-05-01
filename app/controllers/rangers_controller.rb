@@ -19,10 +19,11 @@ class RangersController < ApplicationController
   def show
     # deal with the case that we are trying to get a ranger for a park that doesn't exist
     @ranger = Ranger.find(params[:id])
+    @park = @ranger.parks.all
 
-    if params[:park_id].to_i != @ranger.park.id
-      # do something
-    end
+    # if params[:park_id].to_i != @ranger.park.id
+    #   # do something
+    # end
   end
 
 private

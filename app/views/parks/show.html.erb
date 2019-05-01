@@ -1,6 +1,6 @@
 <p>
   <strong>Name of Park:</strong>
-  <%= @park.name %>
+  <%= @park.name.capitalize %>
 </p>
 
 <p>
@@ -9,15 +9,16 @@
 </p>
 
 <p>
-  <strong>Rangers:</strong>
-</p>
+  <strong>Rangers in charge of this park:</strong>
+
 
  <% @ranger.each do |ranger| %>
     <tr>
-      <td><%= ranger.name %></td>
+      <td><%= ranger.name.capitalize %></td>
       <%# <td><%= link_to 'Show', edit_article_path(article)%>
     </tr>
   <% end %>
+</p>
 
 <%# <%= link_to 'Back', root_path %>
 <%# <%= link_to 'Edit', edit_article_path(@article) %>
