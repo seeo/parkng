@@ -1,6 +1,8 @@
 <%= form_with scope: :ranger, url: rangers_path, local: true do |form| %>
 
-  <%= form.collection_select :park_id, @parks, :id, :name %>
+	<p>
+  	<%= form.collection_select :park_id, @parks, :id, :name %>
+	</p>
 
   <p>
     <%= form.label :name %><br>
