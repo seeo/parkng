@@ -1,4 +1,9 @@
 class RangersController < ApplicationController
+
+  def index
+
+  end
+
   def new
     @parks = Park.all
   end
