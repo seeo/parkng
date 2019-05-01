@@ -28,6 +28,6 @@ class RangersController < ApplicationController
 private
 
   def ranger_params
-    params.require(:ranger).permit(:name, :park_ids => [])
+    params.require(:ranger).permit(:name, :park_id, :park_ids => [])
   end
 end
