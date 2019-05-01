@@ -1,5 +1,9 @@
 <%= form_with scope: :park, url: parks_path, local: true do |form| %>
 
+	<p>
+		<%= form.collection_check_boxes :ranger_ids, @rangers, :id, :name %>
+	</p>
+
   <p>
     <%= form.label :name %><br>
     <%= form.text_field :name %>

@@ -5,7 +5,7 @@ class ParksController < ApplicationController
   end
 
   def new
-
+    @rangers = Ranger.all
   end
 
   def create
