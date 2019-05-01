@@ -1,11 +1,12 @@
 class RangersController < ApplicationController
 
   def index
-    @parks = Park.all
+
   end
 
   def new
     @parks = Park.all
+    # so that later we can select the park that we want to add rangers to...
   end
 
   def create

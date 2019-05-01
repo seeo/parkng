@@ -6,6 +6,7 @@ class ParksController < ApplicationController
 
   def new
     @rangers = Ranger.all
+    # so that later we can select the rangers we want to include in the park
   end
 
   def create
