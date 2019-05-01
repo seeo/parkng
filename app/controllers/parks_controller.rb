@@ -18,6 +18,7 @@ class ParksController < ApplicationController
 
   def show
     @park = Park.find(params[:id])
+    @rangers = = Ranger.where(park_id: params[:park_id])
   end
 
 private
