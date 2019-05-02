@@ -1,0 +1,23 @@
+$text-color: green;
+
+body{
+	color: $text-color;
+}
+
+form{
+	background-color: white;
+	margin: 20px;
+}
+
+p{
+	font-size: 30px;
+	font-style: bold;
+}
+
+.form-title{
+	color: blue;
+}
+
+.sub-title{
+	@extend .form-title;
+}

@@ -1,4 +1,4 @@
-<%= form_with scope: :park, url: parks_path, local: true do |form| %>
+<p class = 'form-title'> <%= form_with scope: :park, url: parks_path, local: true do |form| %> New Park from Yay</p>
 
 	<p>
 		<%= form.collection_check_boxes :ranger_ids, @rangers, :id, :name %>

@@ -12,4 +12,4 @@
 //
 //= require rails-ujs
 //= require activestorage
-//= require_tree .  //require tree actually requires every single file
+//= require_tree .
