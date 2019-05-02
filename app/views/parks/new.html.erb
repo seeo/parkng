@@ -1,4 +1,8 @@
-<p class = 'form-title'> <%= form_with scope: :park, url: parks_path, local: true do |form| %> New Park from Yay</p>
+<h3> Testing this header outside the .form-title class </h3>
+<p class = 'form-title'> New Park form</p>
+<p class = 'sub-title'> enter other stuff here </p>
+
+<%= form_with scope: :park, url: parks_path, local: true do |form| %>
 
 	<p>
 		<%= form.collection_check_boxes :ranger_ids, @rangers, :id, :name %>

@@ -1,4 +1,4 @@
-$text-color: green;
+$text-color: #648961;
 
 body{
 	color: $text-color;
@@ -7,15 +7,15 @@ body{
 form{
 	background-color: white;
 	margin: 20px;
-}
 
-p{
-	font-size: 30px;
-	font-style: bold;
+	p{
+		font-size: 10px;
+		font-style: bold;
+	}
 }
 
 .form-title{
-	color: blue;
+	color: purple;
 }
 
 .sub-title{
